@@ -182,7 +182,7 @@ def readPayoffsArray(payoffType, L, J, I):
 def readProbabilities(P):
     probabs = []
     for p in range(P):
-        probabs.append(float(input('Enter probability for follower {} [0..1]: '.format(p))))
+        probabs.append(float(input('Enter probability for follower {}/{} [0..1]: '.format(p, P))))
 
     return probabs
 
@@ -190,7 +190,15 @@ def main():
     # read input
     L, J, I = readLJI()
     R = readPayoffsArray("leader", L, J, I)
+
+    print("\nInput leader payoffs:")
+    print(R)
+
     C = readPayoffsArray("follower", L, J, I)
+
+    print("\nInput followers payoffs:")
+    print(C)
+
     P = readProbabilities(L)
 
     # create object that stores the input
