@@ -1,3 +1,6 @@
+BASED ON: Deployed ARMOR Protection: The Application of a Game Theoretic Model for Security at the Los Angeles International Airport  
+http://teamcore.usc.edu/papers/2008/AAMASind2008Final.pdf
+
 This program (dobss.py) requires python3.
 To create environment with python3:  
 
